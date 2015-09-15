@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Consumos</title>
+<meta name="viewport"
+	content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link href="dist/css/ratchet.css" rel="stylesheet">
+<link href="dist/css/commun.css" rel="stylesheet">
+<link href="dist/css/ratchet-theme-android.css" rel="stylesheet">
+</head>
+<body>
+	<header class="bar bar-nav">
+		<h1 class="title">Consumos</h1>
+	</header>
+
+	<div class="menu">
+		<ul class="table-view">
+			<li class="table-view-cell"><a href="eletrico.html#"
+				class="navigate-right"> Eletrico </a></li>
+			<li class="table-view-cell"><a href="gas.html#"
+				class="navigate-right"> Gás </a></li>
+			<li class="table-view-cell"><a href="agua.html#"
+				class="navigate-right"> Água</a></li>
+			<li class="table-view-cell"><a href="jogos.html#"
+				class="navigate-right"> Jogo </a></li>
+		</ul>
+	</div>
+
+	<div class="bar">
+		<span class="icon icon-compose icon-person"> About </span>
+		<p>
+			AGES - Agência Experimental de Engenharia de Software <br>
+			Setembro/2015 <br> <a href="cassio.trindade@pucrs.br">Contato:
+				Cássio Trindade </a>
+		</p>
+	</div>
+	<a href="#ajuda" class="btn" style="margin-top: 150px; color: green;"><b>Ajuda</b></a>
+
+
+	<div id="ajuda" class="modal">
+		<header class="bar bar-nav">
+			<a class="icon icon-close pull-right" href="#ajuda"></a>
+			<h1 class="title">Ajuda</h1>
+		</header>
+
+		<div class="content">
+			<p class="content-padded">
+				Este aplicativo faz uma analise dos seus consumos do mês atual
+				comparando com o mês anterior. Em cada tela, pressione o botão <b>Analise</b>.
+				Quando selcionar <b>Gráfico</b>, aparecerar comparativo do consumo.
+			</p>
+		</div>
+	</div>
+
+	<script src="dist/js/jquery-2.1.0.min.js" type="text/jscript"></script>
+	<script src="dist/js/ratchet.min.js"></script>
+	<script src="dist/js/Chart.js"></script>
+	<script src="dist/js/cawt.js"></script>
+</body>
+</html>

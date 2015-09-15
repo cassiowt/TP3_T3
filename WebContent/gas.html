@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Consumo Gas</title>
+		<meta name="viewport"
+		content="initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="dist/css/ratchet.min.css" rel="stylesheet">
+		<link href="dist/css/ratchet-theme-android.min.css" rel="stylesheet"> 
+	</head>
+	<body >
+ 
+		<div  id="principal" class="content">
+			<div id="dados" class="content" >
+				<header class="bar bar-nav">
+					<div id="Barra" >
+						<nav class="bar bar-tab">
+							<a class="tab-item active" style="margin-right:25%" href="index.html"> Inicio </a>
+							<a class="tab-item" href="#grafico" id="menuGrafico" > Grafico </a>
+						</nav>
+					</div>
+				</header>
+				<div class="card" style="margin-top: 50px">
+					<h2 class="title">Consumo Gas</h2>
+					<div id="div1" class="table-view-cell table-view-divider">
+						Mês atual
+					</div>
+
+					<div class="input-row">
+						<label>Reais</label>
+						<input type="number" id="reais_mes_atual" >
+					</div>
+
+					<div class="input-row">
+						<label>Botijoes</label>
+						<input type="number"  id="bot_gas_mes_atual">
+					</div>
+					<div class="table-view-cell table-view-divider">
+						Mês anterior
+					</div>
+					<div class="input-row">
+						<label for="preco_gas">Reais</label>
+						<input type="number" name="reais_mes_anterior" id="reais_mes_anterior"  readonly="readonly"  value="144.00">
+					</div>
+					<div class="input-row">
+						<label>Botijoes</label>
+						<input type="number" name="bot_gas_mes_anterior" id="bot_gas_mes_anterior" readonly="readonly"  value="4.0">
+					</div>
+					<button class="btn btn-positive btn-block" onclick="analisaConsumo('gas')">
+						Analisar
+					</button>
+
+				</div>
+				<div style="margin-top: 50px">
+					<ul class="table-view">
+						<li class="table-view-cell media">
+							<a class="navigate-right"> <img class="media-object pull-left" src="http://placehold.it/42x42&text=A">
+							<div class="media-body">
+								Analise
+								<p id="analise">
+
+								</p>
+							</div> </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="grafico"  class="modal" style="margin-top: 50px">
+			<header class="bar bar-nav">
+				<a class="icon pull-right" href="#"> </a>
+				<h2 class="title">Grafico </h2>
+			</header>
+			<div >
+				<p class="content-padded" style="margin-top: 50px">
+					<span>Mes:</span>
+					<span style="background-color: #DCDCDC">Atual</span>
+					<span style="background-color: #97BBCD">Anterior</span>
+				</p>
+
+				<canvas id="graficoBar" height="225" width="300">
+
+				</canvas>
+			</div>
+		</div>
+
+		<script src="dist/js/jquery-2.1.0.min.js" type="text/jscript"></script>
+		<script src="dist/js/ratchet.min.js"></script> 
+		<script src="dist/js/Chart.js"></script>
+		<script src="dist/js/cawt.js"></script>
+
+	</body>
+
+</html>
